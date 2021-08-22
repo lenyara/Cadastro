@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginHorizontal="5dp"
+         android:text="@string/nome_completo" />
+
+     <EditText
+         android:id="@+id/nomeEt"
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_marginHorizontal="5dp"
+         android:inputType="text" />
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginHorizontal="5dp"
+         android:text="@string/telefone" />
+
+     <EditText
+         android:id="@+id/telefoneEt"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginHorizontal="5dp"
+         android:hint="Ex: 12-93456-7890"
+         android:inputType="text" />
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginHorizontal="5dp"
+         android:text="@string/email" />
+
+     <EditText
+         android:id="@+id/emailEt"
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_marginHorizontal="5dp"
+         android:inputType="textEmailAddress" />
+
+     <CheckBox
+         android:id="@+id/emailCb"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginHorizontal="5dp"
+         android:text="@string/ingressar_lista" />
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginHorizontal="5dp"
+         android:text="@string/sexo" />
+
+     <RadioGroup
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginHorizontal="5dp"
+         android:orientation="horizontal">
+          <RadioButton
+              android:id="@+id/femininoRb"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:checked="true"
+              android:text="@string/feminino" />
+          <RadioButton
+              android:id="@+id/masculinoRb"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="@string/masculino" />
+     </RadioGroup>
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginHorizontal="5dp"
+         android:text="@string/cidade" />
+
+     <EditText
+         android:id="@+id/cidadeEt"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginHorizontal="5dp"
+         android:inputType="text" />
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginHorizontal="5dp"
+         android:text="@string/uf" />
+
+     <Spinner
+         android:id="@+id/estadosSp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginHorizontal="5dp"
+         android:entries="@array/estados"/>
+
+     <LinearLayout
+         android:id="@+id/linearLayout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+      <Button
+         android:id="@+id/limparBt"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginVertical="15dp"
+         android:layout_marginHorizontal="5dp"
+         android:layout_weight="1"
+         android:text="@string/limpar" />
+
+     <Button
+         android:id="@+id/salvarBt"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginVertical="15dp"
+         android:layout_marginHorizontal="5dp"
+         android:layout_weight="1"
+         android:text="@string/salvar" />
+     </LinearLayout>
+
+</LinearLayout>
